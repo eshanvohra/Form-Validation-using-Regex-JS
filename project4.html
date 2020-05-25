@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Welcome to Dragon Travels</title>
+</head>
+
+<body>
+    <div id="success" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success!</strong> You travel request has been submitted.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div id="fail" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Sorry</strong> Either your username , email or mobile is invalid..
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="container">
+        <h2>Dragon Travel Desk</h2>
+        <form>
+            <div class="form-group">
+                <label for="Username">Name</label>
+                <input type="text" class="form-control " id="name" placeholder="Enter Your username">
+                <small id="namevalid" class="form-text text-muted invalid-feedback" style="color:red;">
+                   <p style="color:red;"> Your Username must be 2-10 characters long and should not start with a number.</p>
+                  </small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Id</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter Your Email">
+                <small id="namevalid" class="form-text text-muted invalid-feedback" style="color:red;">
+                    <p style="color:red;"> Your email id should be valid.</p>
+                   </small>
+            </div>
+            <div class="form-group">
+                <label for="car">Select Car</label>
+                <select class="form-control" id="car">
+                    <option>Audi</option>
+                    <option>Titanium</option>
+                    <option>Creta</option>
+                    <option>Mercedez</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile No.</label>
+                <input type="text" class="form-control" id="mobile" placeholder="Enter Your Mobile No.">
+                <small id="namevalid" class="form-text text-muted invalid-feedback" style="color:red;">
+                    <p style="color:red;"> Your Mobile no should be atleast 10 digits long.</p>
+                   </small>
+
+            </div>
+            <div class="form-group">
+                <label for="address">Enter Your Address</label>
+                <textarea class="form-control" id="address" rows="2"></textarea>
+
+            </div>
+            <div class="form-group">
+                <label for="message">Any Other Message...</label>
+                <textarea class="form-control" id="message" rows="2"></textarea>
+            </div>
+        </form>
+        <button id="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="project.js"></script>
+</body>
+
+</html>
